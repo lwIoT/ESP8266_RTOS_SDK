@@ -25,13 +25,13 @@
 #define ENTER_CRITICAL() portENTER_CRITICAL()
 #define EXIT_CRITICAL() portEXIT_CRITICAL()
 
-static const char *TAG = "adc";
+/*static const char *TAG = "adc";
 
 #define ADC_CHECK(a, str, ret_val) \
     if (!(a)) { \
         ESP_LOGE(TAG,"%s(%d): %s", __FUNCTION__, __LINE__, str); \
         return (ret_val); \
-    }
+    }*/
 
 extern uint16_t test_tout();
 extern void phy_adc_read_fast(uint16_t *adc_addr, uint16_t adc_num, uint8_t adc_clk_div);
